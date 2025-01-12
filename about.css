@@ -1,0 +1,146 @@
+/* Resetowanie stylów */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body,
+html {
+	height: 100%;
+	font-family: "Arial", sans-serif;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Tło i nałożenie koloru */
+.background-overlay {
+	background: url("assets/4556266-artwork-digital-art-city-futuristic-cyberpunk.jpg")
+		center/cover no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1; /* Tło na niższym poziomie */
+}
+
+/* Overlay, żeby tekst był lepiej widoczny na tle */
+.background-overlay::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7); /* Ciemna warstwa */
+}
+
+/* Nagłówek */
+.header {
+	text-align: center;
+	padding: 50px;
+	color: white;
+	z-index: 10; /* Ustawiamy wyżej niż tło */
+	position: relative;
+}
+
+.header h1 {
+	font-size: 2.5rem;
+	margin-bottom: 15px;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Dodanie cienia dla lepszej czytelności */
+}
+
+.header .tagline {
+	font-size: 1.2rem;
+	color: #fff;
+	font-style: italic;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Cień dla tagline */
+}
+
+/* Sekcja opisu aplikacji */
+.app-description {
+	padding: 25px;
+	margin: 20px 10%;
+	background-color: rgba(0, 0, 0, 0.6); /* Półprzezroczyste tło */
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+	color: white;
+	flex-grow: 1; /* Pozwalamy tej sekcji rosnąć, by wypełniała dostępną przestrzeń */
+	position: relative; /* Ustawiamy pozycję względną, aby były wyżej niż tło */
+	z-index: 5; /* Zapewniamy, że będą wyżej niż tło, ale niżej niż nagłówek */
+}
+
+.app-description h2 {
+	font-size: 2rem;
+	margin-bottom: 15px;
+	color: #00bcd4;
+	text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Cień dla nagłówka */
+}
+
+.app-description p {
+	font-size: 1.1rem;
+	margin-bottom: 20px;
+	line-height: 1.8;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Cień dla tekstu */
+}
+
+/* Sekcja o autorze */
+.author {
+	padding: 25px;
+	margin: 20px 10%;
+	background-color: rgba(0, 0, 0, 0.6); /* Półprzezroczyste tło */
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+	color: white;
+	position: relative; /* Ustawiamy pozycję względną, aby były wyżej niż tło */
+	z-index: 5; /* Zapewniamy, że będą wyżej niż tło */
+}
+
+.author h2 {
+	font-size: 2rem;
+	margin-bottom: 15px;
+	color: #00bcd4;
+	text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Cień dla nagłówka */
+}
+
+.author p {
+	font-size: 1.1rem;
+	margin-bottom: 20px;
+	line-height: 1.8;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Cień dla tekstu */
+}
+
+/* Stopka */
+.footer {
+	background: rgba(
+		0,
+		0,
+		0,
+		0.7
+	); /* Półprzezroczyste czarne tło, żeby poprawić kontrast */
+	padding: 25px;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	color: white; /* Zwiększa kontrast tekstu */
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Cień, aby tekst był bardziej wyróżniony */
+	text-align: center;
+	font-size: 1rem;
+	width: 100%;
+	margin-top: auto; /* Ustawiamy stopkę na dole */
+	position: relative; /* Ustawiamy pozycję względną, aby były wyżej niż tło */
+	z-index: 5; /* Zapewniamy, że będą wyżej niż tło */
+}
+
+.footer p {
+	margin: 0;
+	font-size: 0.9rem;
+}
+
+/* Stylizacja na większe ekrany */
+@media (min-width: 768px) {
+	.app-description,
+	.author {
+		margin: 20px 25%;
+	}
+}

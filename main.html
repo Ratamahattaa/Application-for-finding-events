@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Poznaj nowych ludzi</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<!-- Górna sekcja -->
+		<div class="background-overlay">
+			<header>
+				<nav class="top-nav">
+					<button class="nav-link" onclick="window.location.href='about.html';">
+						Więcej
+					</button>
+
+					<a href="#">Bezpieczeństwo</a>
+					<a href="#">Wsparcie</a>
+					<div class="language-login">
+						<div class="language-login">
+							<button id="language-toggle" class="nav-link">Polski</button>
+							<div id="language-options" class="hidden">
+								<button class="nav-link language-option">Angielski</button>
+								<button class="nav-link language-option">Francuski</button>
+							</div>
+						</div>
+						<a href="#">Zaloguj się</a>
+					</div>
+				</nav>
+			</header>
+			<main class="content">
+				<h1>Poznaj nowych ludzi w swoim mieście</h1>
+				<div class="community-stats">
+					<div class="stat">
+						<span class="number">834</span>
+						<span class="label">UŻYTKOWNIKÓW</span>
+					</div>
+					<div class="stat">
+						<span class="number">42</span>
+						<span class="label">BARÓW</span>
+					</div>
+					<div class="stat">
+						<span class="number">6</span>
+						<span class="label">KLUBÓW</span>
+					</div>
+				</div>
+				<!-- Strzałka do przewijania -->
+				<div class="scroll-indicator">
+					<button onclick="scrollToEventWeek()">&#9660;</button>
+				</div>
+			</main>
+		</div>
+
+		<!-- Sekcja po przewinięciu -->
+		<section class="expanded-content" id="expanded-content">
+			<!-- Zawartość strony rozwiniętej -->
+			<div class="cards">
+				<div
+					class="card"
+					style="
+						background-image: url('assets/ab6761610000e5ebd0cdb283a7384a0edb665182.jpg');
+					"
+				>
+					<p class="card-title">Slipknot</p>
+				</div>
+				<div
+					class="card"
+					style="
+						background-image: url('assets/INK_WORK-OF-ART-SINGLE-COVER_FLAT_4printi.jpg');
+					"
+				>
+					<p class="card-title">Ice Nine Kills</p>
+				</div>
+				<div
+					class="card"
+					style="
+						background-image: url('assets/81Jmu34n-EL._UF1000,1000_QL80_.jpg');
+					"
+				>
+					<p class="card-title">DISCO4</p>
+				</div>
+			</div>
+
+			<section class="event-week">
+				<h2>EVENT TYGODNIA</h2>
+				<div class="event-container">
+					<!-- Zdjęcie artysty -->
+					<div class="event-image">
+						<img
+							src="assets/Dasha+22+Country+Viral+PLAYDATE.+Media+.jpg"
+							alt="Artysta"
+						/>
+					</div>
+					<!-- Opis wydarzenia -->
+					<div class="event-details">
+						<h3>STUDENCKIE ŚLĄSKA</h3>
+						<p>
+							Dasha Austin to utalentowana autorka, która w swoich dziełach
+							łączy emocje, refleksję i piękno języka. Jej twórczość inspiruje,
+							skłania do przemyśleń i na długo pozostaje w sercach czytelników.
+						</p>
+						<p>
+							<strong>Kiedy:</strong> 14 grudnia 2024, godz. 21:00<br />
+							<strong>Gdzie:</strong> Klub SPIS, Śląska 24<br />
+							<strong>Wstęp:</strong> 45 zł
+						</p>
+						<button class="buy-ticket">Kup bilet</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- Dodaj inne sekcje w stylu przesłanej strony -->
+		</section>
+
+		<script src="script.js"></script>
+	</body>
+</html>
