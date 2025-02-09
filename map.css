@@ -1,0 +1,80 @@
+/* Ustawienia dla całej strony */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background-color: black; /* Ustawienie czarnego tła */
+	background-image: url("/assets/Mapa.png");
+	background-size: contain; /* Dopasowuje obraz do rozmiaru strony, ale bez jego przycinania */
+	background-position: center; /* Wyśrodkowanie obrazu */
+	background-repeat: no-repeat; /* Zapobiega powtarzaniu obrazu */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Arial, sans-serif;
+	background-attachment: fixed; /* Tło jest przytwierdzone do ekranu, nie przesuwa się */
+}
+
+/* Trójkątne znaczniki */
+.triangle {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 20px solid #250a02; /* Kolor trójkąta */
+	cursor: pointer;
+}
+
+#triangle-1 {
+	top: 50%;
+	left: 50%;
+}
+
+#triangle-2 {
+	top: 30%;
+	left: 60%;
+}
+
+#triangle-3 {
+	top: 70%;
+	left: 45%;
+}
+
+/* Okienko z tekstem */
+#popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+	display: none;
+}
+
+#popup-text {
+	margin-bottom: 20px;
+}
+
+#close-popup {
+	background-color: #0b3a41;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+}
+
+#close-popup:hover {
+	background-color: #440303;
+}

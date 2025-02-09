@@ -7,25 +7,42 @@
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-		<!-- Górna sekcja -->
 		<div class="background-overlay">
 			<header>
 				<nav class="top-nav">
-					<button class="nav-link" onclick="window.location.href='about.html';">
+					<button
+						class="nav-link"
+						onclick="window.location.href='about.html';"
+						data-translate="more"
+					>
 						Więcej
 					</button>
+					<a href="#" data-translate="security">Bezpieczeństwo</a>
+					<button
+						class="nav-link"
+						onclick="window.location.href='map.html';"
+						data-translate="more"
+					>
+						Znajdź nas
+					</button>
 
-					<a href="#">Bezpieczeństwo</a>
-					<a href="#">Wsparcie</a>
 					<div class="language-login">
-						<div class="language-login">
-							<button id="language-toggle" class="nav-link">Polski</button>
-							<div id="language-options" class="hidden">
-								<button class="nav-link language-option">Angielski</button>
-								<button class="nav-link language-option">Francuski</button>
-							</div>
+						<button
+							id="language-toggle"
+							class="nav-link"
+							data-translate="language"
+						>
+							Polski
+						</button>
+						<div id="language-options" class="hidden">
+							<button class="nav-link language-option" data-translate="english">
+								Angielski
+							</button>
+							<button class="nav-link language-option" data-translate="french">
+								Francuski
+							</button>
 						</div>
-						<a href="#">Zaloguj się</a>
+						<a href="#" data-translate="login">Zaloguj się</a>
 					</div>
 				</nav>
 			</header>
@@ -45,16 +62,14 @@
 						<span class="label">KLUBÓW</span>
 					</div>
 				</div>
-				<!-- Strzałka do przewijania -->
+
 				<div class="scroll-indicator">
 					<button onclick="scrollToEventWeek()">&#9660;</button>
 				</div>
 			</main>
 		</div>
 
-		<!-- Sekcja po przewinięciu -->
 		<section class="expanded-content" id="expanded-content">
-			<!-- Zawartość strony rozwiniętej -->
 			<div class="cards">
 				<div
 					class="card"
@@ -85,20 +100,20 @@
 			<section class="event-week">
 				<h2>EVENT TYGODNIA</h2>
 				<div class="event-container">
-					<!-- Zdjęcie artysty -->
 					<div class="event-image">
-						<img
-							src="assets/Dasha+22+Country+Viral+PLAYDATE.+Media+.jpg"
-							alt="Artysta"
-						/>
+						<img src="assets/hq720.jpg" alt="Artysta" />
 					</div>
-					<!-- Opis wydarzenia -->
+
 					<div class="event-details">
 						<h3>STUDENCKIE ŚLĄSKA</h3>
 						<p>
-							Dasha Austin to utalentowana autorka, która w swoich dziełach
-							łączy emocje, refleksję i piękno języka. Jej twórczość inspiruje,
-							skłania do przemyśleń i na długo pozostaje w sercach czytelników.
+							To The Rats And Wolves to niemiecki zespół metalcore'owy, który
+							łączy agresywne riffy i scream z elektronicznymi brzmieniami oraz
+							chwytliwymi refrenami. Ich muzyka przyciąga uwagę energicznymi
+							utworami, które balansują między ciężkimi dźwiękami a melodią.
+							Zespół zdobył popularność dzięki wydaniu albumów takich jak
+							Neverland i Cheap Love, a ich koncerty cieszą się dużym uznaniem
+							za intensywność i emocjonalny ładunek.
 						</p>
 						<p>
 							<strong>Kiedy:</strong> 14 grudnia 2024, godz. 21:00<br />
@@ -109,8 +124,6 @@
 					</div>
 				</div>
 			</section>
-
-			<!-- Dodaj inne sekcje w stylu przesłanej strony -->
 		</section>
 
 		<script src="script.js"></script>
